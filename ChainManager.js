@@ -44,6 +44,7 @@ class ChainManager {
     }
 
     static calculateHashForBlock(block) {
+        // This should call `super`
         return ChainManager.calculateHash(block.index, block.previousHash, block.timestamp, block.data);
     }
 
